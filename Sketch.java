@@ -66,7 +66,7 @@ public class Sketch extends PApplet {
       }
     }
 
-    // Draw player and lives indicator and clear screen to white when player lives run out
+    // Draw player, lives indicator and clear screen to white when player lives run out
     fill(0, 0, 255);
     ellipse(playerX, playerY, 30, 30);
   
@@ -142,7 +142,7 @@ public class Sketch extends PApplet {
     for (int i = 0; i < snowflakeX.length; i++) {
       float distance = dist(snowflakeX[i], snowflakeY[i], mouseX, mouseY);
       if (distance < clickRadius) {
-        ballHideStatus[i] = true; // Set the snowflake to be hidden
+        ballHideStatus[i] = true; 
       }
     }
   }
